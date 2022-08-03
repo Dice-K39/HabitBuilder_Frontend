@@ -19,6 +19,9 @@ export class APIConnecterService {
   public loginUser(user: User) : Observable<User> {
     return this.http.post<User>(`${environment.userAPIUrl}/User/Login`, user);
   }
+  public getProfile() : Observable<User>{
+    return this.http.get<User>(`${environment.userAPIUrl}/User/Profile`);
+  }
 
   public loggedIn() {
     return !!localStorage.getItem("token");

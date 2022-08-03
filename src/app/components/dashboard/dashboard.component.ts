@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,13 @@ import { Router } from "@angular/router";
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private http: HttpClient) {}
 
   ngOnInit(): void {
+    
   }
+
+  
+  
 
 }
