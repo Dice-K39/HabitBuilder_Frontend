@@ -20,6 +20,7 @@ import { RouterModule } from '@angular/router';
 import { CreateHabitComponent } from './components/create-habit/create-habit.component';
 import { BrowseHabitsComponent } from './components/browse-habits/browse-habits.component';
 import { HabitSubscribeComponent } from './components/habit-subscribe/habit-subscribe.component';
+import { ViewMyHabitsComponent } from './components/view-my-habits/view-my-habits.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { HabitSubscribeComponent } from './components/habit-subscribe/habit-subs
     CreateHabitComponent,
     BrowseHabitsComponent,
     HabitSubscribeComponent,
+    ViewMyHabitsComponent,
     
   ],
   imports: [

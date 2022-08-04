@@ -13,7 +13,8 @@ import { Habit } from "../../models/Habit";
 export class CreateHabitComponent implements OnInit {
 
   model : any = {}
-  
+  habitId: number = -1;
+  rewardId: number = -1;
 
   constructor(private habitService: HabitService) { }
   
@@ -32,6 +33,13 @@ export class CreateHabitComponent implements OnInit {
     }, error => {
       console.log(error);
     });
+  }
+  associateHabitReward(){
+    this.habitService.associateHabitReward(this.habitId, this.rewardId).subscribe(response => {
+      console.log(response);
+    }, error => {
+      console.log(error);
+    })
   }
   
 
